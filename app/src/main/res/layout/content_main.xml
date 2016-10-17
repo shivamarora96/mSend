@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.shivamarora.msend.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="#edc3fa">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="mSEND"
+        android:padding="15dp"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        android:background="@android:color/holo_purple"
+        android:gravity="center"
+        android:id="@+id/textView"
+
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="PHONE NO :: "
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:textSize="19dp"
+        android:textStyle="bold"
+
+        android:id="@+id/textView2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:background="#d9aae2"
+    android:padding="15dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Enter Indian Mobile No (10 digits)"
+        android:id="@+id/phoneNo"
+        android:layout_gravity="center_horizontal"
+         />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="MESSAGE :: "
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="19dp"
+        android:textStyle="bold"
+
+        android:id="@+id/textView3" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="123dp"
+        android:id="@+id/scrollView"
+        android:layout_marginTop="10dp"
+        android:background="#d9aae2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="15dp"
+        android:layout_gravity="center_horizontal">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/message"
+            android:hint="Enter Your Message here !!!"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#4a0a68" />
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:text="SEND!!"
+        android:layout_marginTop="10dp"
+        android:textColor="#fffddd"
+        android:background="@android:color/holo_purple"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>
